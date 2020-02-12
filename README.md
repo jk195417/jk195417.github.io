@@ -2,7 +2,7 @@
 
 Github: https://github.com/jk195417  
 
-Blog: https://yang-hong-xin.com/blog  
+Blog: https://blog.yang-hong-xin.com  
 
 Self Introduction : https://yang-hong-xin.com/me  
 
