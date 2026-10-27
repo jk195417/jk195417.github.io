@@ -1,0 +1,27 @@
+name: Check
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  schedule:
+    - cron: "0 1 * * 1"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - name: Validate HTML
+        run: npx --yes html-validate@9 index.html
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # LinkedIn and Facebook block automated requests
+          args: --no-progress --exclude linkedin.com --exclude facebook.com index.html README.md
+          fail: true
