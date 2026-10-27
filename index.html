@@ -1,36 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJH8GKCK');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>jk195417.github.io</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117837845-1"></script>
-  <script type="text/javascript">
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
+  <title>楊竑昕 Aaron Yang</title>
+  <meta name="description" content="楊竑昕 Aaron Yang，美光科技 Staff AI Engineer。履歷、部落格、GitHub 與作品的總入口。">
+  <meta property="og:title" content="楊竑昕 Aaron Yang">
+  <meta property="og:description" content="Staff AI Engineer at Micron. Resume, blog, GitHub and projects in one place.">
+  <meta property="og:image" content="https://www.gravatar.com/avatar/1d547423d2d1a87397303069bd302db4?s=512">
+  <meta property="og:url" content="https://yang-hong-xin.com/">
+  <link rel="icon" href="https://www.gravatar.com/avatar/1d547423d2d1a87397303069bd302db4?s=64">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1f2328;
+      --muted: #59636e;
+      --border: #e3e6ea;
+      --hover: #f0f3f7;
+      --accent: #2f6feb;
     }
-    gtag('js', new Date());
-    gtag('config', 'UA-117837845-1');
 
-  </script>
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1216;
+        --card: #171b21;
+        --text: #e6edf3;
+        --muted: #9198a1;
+        --border: #2a3038;
+        --hover: #1f252d;
+        --accent: #58a6ff;
+      }
+    }
 
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 48px 16px 32px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .avatar {
+      width: 112px;
+      height: 112px;
+      border-radius: 50%;
+      border: 3px solid var(--card);
+      box-shadow: 0 2px 12px rgb(0 0 0 / 12%);
+    }
+
+    h1 {
+      margin: 16px 0 4px;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    .title {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .bio {
+      margin: 12px 0 0;
+      font-size: 0.95rem;
+    }
+
+    section {
+      margin-top: 24px;
+    }
+
+    h2 {
+      margin: 0 0 8px 4px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .links {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px 16px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--text);
+      text-decoration: none;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .links a:hover,
+    .links a:focus-visible {
+      background: var(--hover);
+      border-color: var(--accent);
+    }
+
+    .links i {
+      width: 20px;
+      text-align: center;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+
+    .label {
+      font-weight: 500;
+    }
+
+    .desc {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: inherit;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Github : <a href="https://github.com/jk195417">https://github.com/jk195417</a></h1>
-  <h1>Blog : <a href="https://blog.yang-hong-xin.com">https://blog.yang-hong-xin.com</a></h1>
-  <h1>Self Introduction : <a href="https://yang-hong-xin.com/me">https://yang-hong-xin.com/me</a></h1>
-  <h1>Github Profile Visualization :
-    <br>
-    <a href="https://sourcerer.io/jk195417">https://sourcerer.io/jk195417</a>
-    <br>
-    <a href="https://profile-summary-for-github.com/user/jk195417">https://profile-summary-for-github.com/user/jk195417</a>
-  </h1>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <!-- [html-validate-disable-next no-inline-style -- official GTM snippet] -->
+    <iframe title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-MJH8GKCK"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <main>
+    <header>
+      <img class="avatar" src="https://www.gravatar.com/avatar/1d547423d2d1a87397303069bd302db4?s=256" alt="楊竑昕的頭像">
+      <h1>楊竑昕 Aaron Yang</h1>
+      <p class="title">Staff AI Engineer at Micron · Architect</p>
+      <p class="bio">2014 年開始寫程式，2019 年加入美光，負責服務 7 個地區、每日 3000+ 位使用者的變更管理系統。</p>
+    </header>
+
+    <section>
+      <h2>Resume 履歷</h2>
+      <ul class="links">
+        <li><a href="https://yang-hong-xin.notion.site/Resume-b8b910439158413a81868e1a39c27310"><i class="fa-solid fa-file-lines"></i><span><span class="label">Resume</span><span class="desc">English · Notion</span></span></a></li>
+        <li><a href="https://yang-hong-xin.notion.site/926f9aff8ffd4166a8e1ed5d37f6cd89"><i class="fa-solid fa-file-lines"></i><span><span class="label">履歷</span><span class="desc">中文 · Notion</span></span></a></li>
+        <li><a href="https://resume.yang-hong-xin.com"><i class="fa-solid fa-file-pdf"></i><span><span class="label">Resume PDF</span><span class="desc">可下載、列印的版本</span></span></a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Profiles 社群</h2>
+      <ul class="links">
+        <li><a href="https://www.linkedin.com/in/hongxin-yang/"><i class="fa-brands fa-linkedin"></i><span><span class="label">LinkedIn</span><span class="desc">in/hongxin-yang</span></span></a></li>
+        <li><a href="https://github.com/jk195417"><i class="fa-brands fa-github"></i><span><span class="label">GitHub</span><span class="desc">@jk195417</span></span></a></li>
+        <li><a href="https://www.facebook.com/yang.hong.xin"><i class="fa-brands fa-facebook"></i><span><span class="label">Facebook</span><span class="desc">yang.hong.xin</span></span></a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Sites 網站</h2>
+      <ul class="links">
+        <li><a href="https://blog.yang-hong-xin.com"><i class="fa-solid fa-pen-nib"></i><span><span class="label">Blog</span><span class="desc">技術筆記與教學</span></span></a></li>
+        <li><a href="https://yang-hong-xin.com/me"><i class="fa-solid fa-id-card"></i><span><span class="label">Me</span><span class="desc">用 YAML 產生的線上履歷</span></span></a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects 作品</h2>
+      <ul class="links">
+        <li><a href="https://yang-hong-xin.com/bisection-anything/"><i class="fa-solid fa-ranking-star"></i><span><span class="label">Bisection Anything</span><span class="desc">用兩兩比較替任何東西排名</span></span></a></li>
+        <li><a href="https://danmu-classroom.danmu-worker.workers.dev"><i class="fa-solid fa-comments"></i><span><span class="label">彈幕教室 Danmu Classroom</span><span class="desc">觀眾用手機或 LINE 送彈幕到講者螢幕</span></span></a></li>
+        <li><a href="https://yang-hong-xin.com/lottery"><i class="fa-solid fa-gift"></i><span><span class="label">Lottery</span><span class="desc">聖誕節、尾牙抽獎小工具</span></span></a></li>
+        <li><a href="https://yang-hong-xin.com/mullet"><i class="fa-solid fa-calculator"></i><span><span class="label">烏魚子計算機</span><span class="desc">Mullet calculator</span></span></a></li>
+      </ul>
+    </section>
+
+    <footer><a href="mailto:yang.hong.xin.tw@gmail.com">yang.hong.xin.tw@gmail.com</a></footer>
+  </main>
 </body>
 
 </html>
